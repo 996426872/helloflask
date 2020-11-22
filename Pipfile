@@ -4,8 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+flask = "*"
+flask-wtf = "*"
+wtforms = "*"
 
 [dev-packages]
+watchdog = "*"
 
 [requires]
 python_version = "3.7"
