@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>index</title>
-</head>
-<body>
-<a href="{{ url_for('index') }}">&larr; Return</a>
-<h1>Hello, {{ name }}!,Have a nice day too!.</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}User{% endblock %}
+{% block page_content %}
+<h1>I'm {{ name }}.</h1>
+{% endblock %}

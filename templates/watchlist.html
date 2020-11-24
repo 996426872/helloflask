@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ user.username }}'s Watchlist</title>
-</head>
-<body>
-<a href="{{ url_for('index') }}">&larr; Return</a>
+{% extends "base.html" %}
+{% block title %}{{ user.username }}'s Watchlist{% endblock %}
+{% block page_content %}
 <h2>{{ user.username }}</h2>
 {% if user.bio %}
     <i>{{ user.bio }}</i>
@@ -18,6 +13,5 @@
         <li>{{ movie.name }} - {{ movie.year }}</li>
     {% endfor %}
 </ul>
-
-</body>
-</html>
+</div>
+{% endblock %}
