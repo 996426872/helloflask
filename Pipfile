@@ -8,6 +8,8 @@ flask = "*"
 flask-wtf = "*"
 wtforms = "*"
 flask-bootstrap = "*"
+wordcloud = "*"
+qrcode = "*"
 
 [dev-packages]
 watchdog = "*"
